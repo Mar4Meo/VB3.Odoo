@@ -10,9 +10,7 @@ const cors = require('cors')
 
 dotenv.config()
 
-const HostName = process.env.HOSTNAME
-
-const Port = process.env.Port
+const Port = 5000
 
 app.use(cors())
 
@@ -41,6 +39,6 @@ app.use((req , res) => {
 
 // Listen Port  \\
 
-app.listen(Port,HostName, ()=>{
-    console.log(`You Run On: http://${HostName}:${Port}/`)
+app.listen(Port, ()=>{
+    console.log(`You Run`)
 })
